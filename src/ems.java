@@ -32,7 +32,7 @@ public class ems
 			switch(choice1)
 			{
 				case 1:	manager obj=new manager();
-						int id2=obj.login();
+						int id2=obj.login();           //login method called. User id= 1  password = abc
 						if(id2==-1)
 							System.out.println("Login failed. You have exceeded maximum number of tries.");
 						else
@@ -60,7 +60,7 @@ public class ems
 										sc.nextLine();
 									}
 								}
-								switch(choice1)
+								switch(choice1)            //manger class modules called. Check manager.java for more details
 								{
 									case 1: obj.search();                                  
 											break;
@@ -82,7 +82,7 @@ public class ems
 						break;
 				
 				case 2:	employee obj1= new employee();
-						int id3=obj1.login();
+						int id3=obj1.login();    // any integer for user id. password = abc
 						if(id3==-1)
 							System.out.println("Login failed. You have exceeded maximum number of tries.");
 						else
@@ -109,7 +109,7 @@ public class ems
 										sc.nextLine();
 									}
 								}
-								switch(choice1)
+								switch(choice1)     //employee class modules called. Check manager.java for more details
 								{
 									case 1: obj1.profile();                                 
 											break;

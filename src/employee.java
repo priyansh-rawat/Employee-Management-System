@@ -4,7 +4,7 @@ public class employee extends company
 {	
 	Scanner sc= new Scanner(System.in);
 	
-	int login()
+	int login()       //login method for employees
 	{
 		String pass;
 		int count=0;
@@ -24,9 +24,10 @@ public class employee extends company
 					System.out.println("Wrong input. Please enter an integer");
 					sc.nextLine();
 				}
-			}System.out.println("PASSWORD  : ");
+			}
+			System.out.println("PASSWORD  : ");
 			pass=sc.next();
-			if(id!=1 && pass.equals(password))
+			if(id!=1 && pass.equals(password))     //if the user types incorrect login details 3 times, the code will not execute further.
 			{	
 				return id;
 			}
@@ -36,7 +37,7 @@ public class employee extends company
 		return -1;
 	}
 	
-	void feedback() 
+	void feedback()      //feedback module for employees
 	{
 		System.out.println("Hello. Please provide us with your feedback.");
 		sc.nextLine();
@@ -44,7 +45,7 @@ public class employee extends company
 		System.out.println("\nYour feedback has been noted. Thank you");		
 	}
 	
-	void update() 
+	void update()     //method to update data.
 	{	
 		System.out.println("Press enter key to get started (IGNORE IF PROCESS READY)");
 		sc.nextLine();
@@ -57,7 +58,7 @@ public class employee extends company
 		System.out.println("Profile Updated. (Note it may take a few hours to update changes in your profile.)");
 	}
 	
-	void profile() 
+	void profile()   //method to view profile. Shows random data everytime
 	{
 		System.out.println("\n  MY PROFILE");
 		int randomInt=(int)(10*Math.random());
